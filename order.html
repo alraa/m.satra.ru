@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Satra</title>
+<meta name="Description" content="">
+	<meta name="Keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700italic,700,400italic&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<!--[if lt IE 9]><script src="js/css3-mediaqueries.js"></script><![endif]-->
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->	
+</head>
+<body>
+	<div id="container">
+		<header id="header">
+			<div class="head-top">
+				<div class="cont-in">
+					<div class="logo-block"><a href="#" class="logo"><img src="images/logo_mobil.svg" alt=""/></a></div>
+					<a href="#" class="mobile-button"><span></span></a>
+					<ul class="user-links">
+						<li><a href="#"><i class="icon-user"></i></a>
+							<ul>
+								<li><a href="#fancy_ajax" class="fancy-registry">Вход</a> \ </li>
+								<li><a href="#fancy_ajax2" class="fancy-registry">Регистрация</a></li>
+							</ul>
+						</li>
+						<li><a href="#"><i class="icon-basket"></i><span>12</span></a></li>
+					</ul>
+				</div>
+			</div>	
+			<div class="menu-line">
+				<div class="cont-in">											
+					<div class="search">
+						<button type="submit" class="s-btn"></button>
+						<input type="text" class="s-txt" placeholder="Поиск по товарам"/>
+						<a href="#" class="clear-search"></a>
+					</div>
+					<div class="links">
+						<a href="#" class="back-link"></a>
+						<h1>оформление</h1>
+					</div>
+				</div>
+			</div>
+			<nav class="nav"><ul>
+				<li>
+					<a href="#">каталог</a>
+					<ul>
+						<li><a href="#">Ванны</a></li>
+						<li><a href="#">мебель для ванной</a></li>
+						<li><a href="#">душевые кабины</a></li>
+						<li><a href="#">душевые боксы</a></li>
+						<li><a href="#">смесители</a></li>
+						<li><a href="#">раковины</a></li>
+						<li><a href="#">унитазы</a></li>
+						<li><a href="#">биде</a></li>
+						<li><a href="#">душ</a></li>
+						<li><a href="#">аксессуары для ванной</a></li>
+						<li><a href="#">кухонные мойки</a></li>
+						<li><a href="#">инсталяции</a></li>
+						<li><a href="#">писсуары</a></li>
+						<li><a href="#">сифоны</a></li>
+						<li><a href="#">полотенцесушители</a></li>
+						<li><a href="#">водонагреватели</a></li>
+						<li><a href="#">трапы</a></li>
+					</ul>
+				</li>
+				<li><a href="#">бренды</a></li>
+				<li><a href="#">оплата</a></li>
+				<li><a href="#">доставка</a></li>
+				<li><a href="#">Установка</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">О компании</a></li>
+			</ul>
+			</nav>
+		</header>
+		<div id="content">			
+			<div class="cont-in">	
+				<section class="section-order">
+					<ul class="basket-nav">
+						<li class="basket-nav-item basket-nav-item-sm">
+							<div class="basket-nav-item-cont">
+								<a href="#" class="basket-nav-link">ваша корзина</a>
+							</div>
+						</li>
+						<li class="basket-nav-item basket-nav-item-lg  active">
+							<div class="basket-nav-item-cont">
+								<a href="#" class="basket-nav-link">Оформление заказа</a>
+							</div>
+						</li>
+					</ul>
+					<div class="box-order">
+						<form action="#">
+							<div class="order-step order-step-1">
+								<div class="order-step__number">1</div>
+								<h2>Введите ваши данные</h2>
+								<div class="form-step">
+									<div class="box-field">
+										<label class="box-field__label">Телефон:</label>
+										<div class="box-field__input">
+											<input type="tel" class="form-control placeholder" placeholder="+7">
+										</div>
+									</div>
+									<div class="box-field valid-field">
+										<label class="box-field__label">Имя:</label>
+										<div class="box-field__input">
+											<input type="text" class="form-control" placeholder="Имя" value="Карпов">
+										</div>
+									</div>
+									<div class="box-field error-field">
+										<label class="box-field__label">Е-mail:</label>
+										<div class="box-field__input">
+											<input type="text" class="form-control" placeholder="" value="">
+										</div>
+									</div>
+									<div class="box-field">
+										<label class="box-field__label">Комментарий:</label>
+										<div class="box-field__input">
+											<textarea class="form-control placeholder" placeholder="Ваш комментарий к заказу"></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="order-step active-step order-step-2">
+								<div class="order-step__number">2</div>
+								<h2>Выберите способ оплаты</h2>
+								<div class="choose-pay clearfix">
+									<ul class="choose-pay-list">
+										<li class="choose-pay-list__item choosed-pay">
+											<label class="choose-pay-list__link js-pay-choose">
+												<input type="checkbox">
+												<span class="choose-pay__name"><span class="choose-pay__icon"></span>НАЛИЧНЫМИ</span>
+												<span class="choose-pay__text">
+													Курьеру • При самовывозе
+												</span>
+											</label>
+										</li>
+										<li class="choose-pay-list__item">
+											<label class="choose-pay-list__link js-pay-choose">
+												<input type="checkbox">
+												<span class="choose-pay__name"><span class="choose-pay__icon"></span>КАРТОЙ</span>
+												<span class="choose-pay__text">
+													Курьеру • На сайте • При самовывозе
+												</span>
+											</label>
+										</li>
+										<li class="choose-pay-list__item">
+											<label class="choose-pay-list__link js-pay-choose">
+												<input type="checkbox">
+												<span class="choose-pay__name"><span class="choose-pay__icon"></span>БЕЗНАЛИЧНЫМ ПЛАТЕЖОМ</span>
+												<span class="choose-pay__text">
+													Для физических и юридических лиц
+												</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="order-step order-step-3">
+										<div class="order-step__number">3</div>
+										<h2>Выберите способ доставки</h2>
+										<div class="box-tab tabs-order-wrap">
+											<div class="nav-tab nav-tab-order">
+												<ul class="nav-tab-list tabs-order">
+													<li class="nav-tab__item active">
+														<a href="#tab_1" class="nav-tab__link">
+															<span class="nav-tab__text">
+																<span class="nav-tab__icon"><i class="icon-check"></i></span>ДОСТАВКА</span>
+														</a>
+													</li>
+													<li class="nav-tab__item">
+														<a href="#tab_2" class="nav-tab__link">
+															<span class="nav-tab__text"><span class="nav-tab__icon"><i class="icon-check"></i></span>САМОВЫВОЗ</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="box-tab-cont box-tab-cont-order">
+												<div class="tabs-cont tabs-order-cont" id="tab_1">
+													<div class="tab-cont-wrap">
+														<div class="form-delivery clearfix">
+															
+															<div class="form-delivery__field">
+																<input type="text" class="form-control form-control_small" value="Россия, Москва, улица Мусы Джалиля, 23/56">
+															</div>
+														</div>
+														<div class="form-delivery__button">
+															<a href="#" class="btn btn-blue btn-small">Расчитать</a>
+														</div>
+														<div class="show-map">
+															<a class="show-map__link" href="#">
+																<span class="show-map__icon"></span>
+																<span class="show-map__text">Указать на карте</span>
+															</a>
+															<div class="box-map-delivery">
+																<iframe src="https://api-maps.yandex.ua/frame/v1/-/CZc8YBO8"></iframe>
+															</div>
+														</div>
+														<div class="delivery-price">
+															<span>Без учета подъема на этаж.</span>
+															<div class="delivery-price__summ">Стоимость доставки: 1 350 р.</div>
+														</div>
+													</div>
+												</div>
+												<div class="tabs-cont tabs-order-cont hide" id="tab_2">
+													<div class="tab-cont-wrap">
+														<div class="inf-delivery">
+															<h3>Пункт самовывоза</h3>
+															<p>Московская область, Ленинский район, село Беседы, пр-д Промышленный, д. 7</p>
+															<div class="show-map">
+																<a class="show-map__link" href="#">
+																	<span class="show-map__icon"><i class="icon-flag"></i></span>
+																	<span class="show-map__text">Показать на карте</span>
+																</a>
+																<div class="box-map-delivery">
+																	<iframe src="https://api-maps.yandex.ua/frame/v1/-/CZc8YBO8"></iframe>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+							</div>
+							<div class="order-step order-step-4">
+								<div class="order-step__number">4</div>
+								<h2>НУжен ли подъем на этаж</h2>
+
+								<ul class="choose-climb-list">
+									<li class="choose-climb-list__item">
+										<a href="#" class="choose-climb-list__link js-open-climb">
+											<span class="choose-climb__name"><span class="choose-climb__icon"></span>ДА, ЕСТЬ ЛИФТ</span>
+										</a>
+										<div class="order-climb">
+											<div class="choose-height">
+												<div class="delivery-price__summ">Стоимость подъема 1 500 Р.</div>
+											</div>												
+										</div>
+									</li>
+									<li class="choose-climb-list__item choosed-climb">
+										<a href="#" class="choose-climb-list__link js-open-climb">
+											<span class="choose-climb__name"><span class="choose-climb__icon"></span>ДА, ЛИФТА НЕТ</span>
+										</a>
+										<div class="order-climb" style="display:block">
+											<div class="choose-height">
+												<div class="choose-height__label">
+													Укажите этаж
+												</div>
+												<div class="choose-height__form">
+													<div class="numb" onmousedown="return false" onselectstart="return false">
+														<span class="minus">-</span>
+														<input type="text" value="1">
+														<span class="plus">+</span>
+													</div>
+												</div>
+												<div class="delivery-price__summ">Стоимость подъема 2 500 Р.</div>
+											</div>												
+										</div>
+									</li>
+									<li class="choose-climb-list__item">
+										<a href="#" class="choose-climb-list__link js-open-climb">
+											<span class="choose-climb__name"><span class="choose-climb__icon"></span>НЕ ТРЕБУЕТСЯ</span>
+										</a>
+										<div class="order-climb">
+											<div class="choose-height">
+												<div class="delivery-price__summ">Стоимость подъема 0 Р.</div>
+											</div>												
+										</div>
+									</li>
+									
+								</ul>
+							</div>
+							<div class="order-step order-step_summ">
+								<h2>Итого</h2>
+								<div class="box-order-summ">
+									<div class="order-summ-inf">
+										<div class="order-summ-inf__item">
+											Товары <a href="#" class="order-summ-inf__link">2</a>
+											<div class="order-summ-inf__result-item">25 749 р.</div>
+										</div>
+										<div class="order-summ-inf__item">
+											Доставка
+											<div class="order-summ-inf__result-item">Уточнит менеджер</div>
+										</div>
+										<div class="order-summ-inf__item">
+											Итого к оплате
+											<div class="order-summ-inf__result-item"><span class="main-summ-order">28 349 р.</span></div>
+										</div>
+										<div class="main-button-order">
+											<button class="btn btn-blue" type="submit">ЗАКАЗАТЬ</button>
+											<div class="main-button-order__comment">Нажимая «Заказать», вы соглашаетесь с условиями <a href="#">Пользовательского соглашения</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+
+				</section>
+			</div>	
+		</div>						
+		<footer id="footer">	
+			<div class="foot-in">		
+				<div class="cont-in">					
+					<div class="foot-cont">
+						<div class="foot-title">У вас остались вопросы?</div>
+						<div class="c-phone"><a href="tel:89457567767">8 (945) 756-77-67</a></div>
+						<div class="c-time">9:00 — 21:00 по Москве</div>
+					</div>						
+					<a href="#" class="main-link">Перейти <br/>на полную версию сайта</a>
+				</div>
+			</div>
+		</footer>	
+	</div>
+
+	<div style="display:none">
+		<div id="fancy_ajax" class="pop-up-registry fancy_ajax">
+			<div class="menu-line">
+				<div class="cont-in">
+					<div class="links">
+						<a href="#" class="back-link"></a>
+						<h1>Авторизация</h1>
+					</div>
+				</div>
+			</div>
+			<div class="registry-content">
+				<label>ВАШ МОБИЛЬНЫЙ</label>
+				<div class="form-row form-group-row">
+					<div class="form-group-el form-group-el-sm">
+						<input type="text" class="t-inp" placeholder="">
+					</div>
+					<div class="form-group-el form-group-el-lg">
+						<input type="text" class="t-inp" placeholder="">
+					</div>
+				</div>
+				<div class="registry-text">Мы сохраним ваш номер в тайне</div>
+			</div>			
+		</div>
+
+		<div id="fancy_ajax2" class="pop-up-registry fancy_ajax">
+			<div class="menu-line">
+				<div class="cont-in">
+					<div class="links">
+						<a href="#" class="back-link"></a>
+						<h1>Авторизация</h1>
+					</div>
+				</div>
+			</div>
+			<div class="registry-content">
+
+				<label>ВАШ МОБИЛЬНЫЙ</label>
+				<div class="form-row form-group-row">
+					<div class="form-group-el form-group-el-sm">
+						<input type="text" class="t-inp" placeholder="">
+					</div>
+					<div class="form-group-el form-group-el-lg">
+						<input type="text" class="t-inp" placeholder="">
+					</div>
+				</div>
+
+				<label>ИМЯ</label>
+				<div class="form-row">
+					<div class="form-el">
+						<input type="text" class="t-inp" placeholder="">
+					</div>
+				</div>
+
+				<label>ФАМИЛИЯ</label>
+				<div class="form-row">
+					<div class="form-el">
+						<input type="text" class="t-inp" placeholder="">
+					</div>
+				</div>
+
+				<label>E-MAIL</label>
+				<div class="form-row">
+					<div class="form-el">
+						<input type="text" class="t-inp" placeholder="">
+					</div>
+				</div>
+				<a href="#" class="btn btn-green-lg">РЕГИСТРАЦИЯ</a>
+			</div>
+		</div>
+
+		<div id="fancy_ajax3" class="pop-up pop-up-click fancy_ajax">
+			<div class="сlick-cont">
+				<h3 class="h1">Заказать в один клик</h3>
+				<div class="сlick-text">Пожалуйста, укажите номер вашего телефона <br>и время звонка, чтобы мы могли связаться с вами.</div>
+				<div class="form-row">
+					<label>Телефон</label><div class="form-el"><input type="text" class="t-inp placeholder" placeholder=""></div>
+				</div>
+				<div class="box-btn">
+					<a href="#" class="btn btn-or btn-or-lg">отправить</a>
+				</div>
+			</div>			
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.2.custom.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.slider.js"></script>
+	<script type="text/javascript" src="js/jquery.formstyler.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
