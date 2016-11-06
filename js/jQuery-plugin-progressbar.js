@@ -1,1 +1,45 @@
-!function(a){a.fn.loading=function(){var b={backgroundColor:"#b3cef6",progressColor:"#4b86db",percent:75,duration:0};a(this).each(function(){var c=a(this),d={backgroundColor:c.data("color")?c.data("color").split(",")[0]:b.backgroundColor,progressColor:c.data("color")?c.data("color").split(",")[1]:b.progressColor,percent:c.data("percent")?c.data("percent"):b.percent,duration:c.data("duration")?c.data("duration"):b.duration};c.append('<div class="background"></div><div class="rotate"></div><div class="left"></div><div class="right"></div><div class=""><span>'+d.percent+"%</span></div>"),c.find(".background").css("background-color",d.backgroundColor),c.find(".left").css("background-color",d.backgroundColor),c.find(".rotate").css("background-color",d.progressColor),c.find(".right").css("background-color",d.progressColor);var e=c.find(".rotate");if(setTimeout(function(){e.css({transition:"transform "+d.duration+"ms linear",transform:"rotate("+3.6*d.percent+"deg)"})},1),d.percent>50){var f="toggle "+d.duration/d.percent*50+"ms step-end",g="toggle "+d.duration/d.percent*50+"ms step-start";c.find(".right").css({animation:f,opacity:1}),c.find(".left").css({animation:g,opacity:0})}})}}(jQuery);
+;
+(function($) {
+	$.fn.loading = function() {
+		var DEFAULTS = {
+			backgroundColor: '#b3cef6',
+			progressColor: '#4b86db',
+			percent: 75,
+			duration: 0
+		};
+		$(this).each(function() {
+			var $target = $(this);
+			var opts = {
+				backgroundColor: $target.data('color') ? $target.data('color').split(',')[0] : DEFAULTS.backgroundColor,
+				progressColor: $target.data('color') ? $target.data('color').split(',')[1] : DEFAULTS.progressColor,
+				percent: $target.data('percent') ? $target.data('percent') : DEFAULTS.percent,
+				duration: $target.data('duration') ? $target.data('duration') : DEFAULTS.duration
+			};
+			// console.log(opts);
+			$target.append('<div class="background"></div><div class="rotate"></div><div class="left"></div><div class="right"></div><div class=""><span>' + opts.percent + '%</span></div>');
+			$target.find('.background').css('background-color', opts.backgroundColor);
+			$target.find('.left').css('background-color', opts.backgroundColor);
+			$target.find('.rotate').css('background-color', opts.progressColor);
+			$target.find('.right').css('background-color', opts.progressColor);
+			var $rotate = $target.find('.rotate');
+			setTimeout(function() {
+				$rotate.css({
+					'transition': 'transform ' + opts.duration + 'ms linear',
+					'transform': 'rotate(' + opts.percent * 3.6 + 'deg)'
+				});
+			}, 1);
+			if(opts.percent > 50) {
+				var animationRight = 'toggle ' + (opts.duration / opts.percent * 50) + 'ms step-end';
+				var animationLeft = 'toggle ' + (opts.duration / opts.percent * 50) + 'ms step-start';
+				$target.find('.right').css({
+					animation: animationRight,
+					opacity: 1
+				});
+				$target.find('.left').css({
+					animation: animationLeft,
+					opacity: 0
+				});
+			}
+		});
+	}
+})(jQuery);
